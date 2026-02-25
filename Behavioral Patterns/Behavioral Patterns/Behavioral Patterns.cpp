@@ -8,6 +8,7 @@ public:
 	void openFile(const string& file) { cout << "Открываем файл: " << file << endl; }
 	void shutdown() { cout << "Выключаем компьютер " << endl; }
 	void launcherBrowser() { cout << "Запускаем браузер" << endl; }
+	void restart() { cout << "Перезагружаем компьютер" << endl; }
 };
 
 class Commad {
@@ -50,6 +51,19 @@ public:
 
 };
 
+class RestardCommand : public Commad
+{
+private:
+	ComputerSystem* system;
+public:
+	RestardCommand(ComputerSystem* s) : system(s) {}
+	void execute() override { system->restart(); }
+	void undo() override { cout << "Отмена: Выключаем перезагрузку" << endl; }
+
+};
+
+
+
 class RenoteControl
 {
 private:
@@ -81,11 +95,13 @@ int main()
 	Commad* openCmd = new openFileCommand(&system, "document.txt");
 	Commad* shutdownCmd = new ShutdownCommand(&system);
 	Commad* browserCmd = new LaunchBrowserCommand(&system);
+	Commad* restardCmd = new RestardCommand(&system);
 
 	RenoteControl remote;
 	remote.addCommand(openCmd);
 	remote.addCommand(browserCmd);
 	remote.addCommand(shutdownCmd);
+	remote.addCommand(restardCmd);
 
 	remote.pressButton();
 	remote.undoLast();
