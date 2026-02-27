@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+/// \brief Класс который содержит логику выполнения действий 
 class ComputerSystem
 {
 public:
@@ -11,12 +12,21 @@ public:
 	void restart() { cout << "Перезагружаем компьютер" << endl; }
 };
 
+/// \brief Интерфейс команд
 class Commad {
 public:
+	/**
+	* \brief Метод для испольнения команды
+	*/
 	virtual void execute() = 0;
+	/**
+	* \brief Метод для отмены действия
+	* \remark Просто выводится текст в консоль
+	*/
 	virtual void undo() = 0;
 };
 
+/// \brief Команда открытия файла
 class openFileCommand : public Commad
 {
 private:
@@ -29,6 +39,7 @@ public:
 
 };
 
+/// \brief Команда выполнения системы
 class ShutdownCommand : public Commad
 {
 private:
@@ -40,6 +51,7 @@ public:
 
 };
 
+/// \brief Команда запуска браузера
 class LaunchBrowserCommand : public Commad
 {
 private:
@@ -51,6 +63,7 @@ public:
 
 };
 
+/// \brief Команда перезагрузки 
 class RestardCommand : public Commad
 {
 private:
@@ -63,19 +76,30 @@ public:
 };
 
 
-
+/// \brief Класс инициатор
 class RenoteControl
 {
 private:
 	vector<Commad*> commands;
 public:
+	/**
+	* \brief Добавляет команду в очередь выполнения
+	* \note Объекты команд должны быть созданы заранее
+	*/
 	void addCommand(Commad* cmd) { commands.push_back(cmd); }
+	/**
+	* \brief Последовательно выполняет все накопленные команды
+	*/
 	void pressButton() {
 		for (auto cmd : commands)
 		{
 			cmd->execute();
 		}
 	}
+	/**
+	* \brief Отменяет последнюю добавленную команду
+	* \remark Удаляет команду из спсика после отмены
+	*/
 	void undoLast()
 	{
 		if (!commands.empty())
@@ -86,6 +110,7 @@ public:
 	}
 };
 
+/// \brief Создание объектов, отмента последнего действия и очистка памяти
 int main()
 {
 	setlocale(LC_ALL, "ru");
