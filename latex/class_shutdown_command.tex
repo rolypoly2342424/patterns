@@ -1,0 +1,93 @@
+\doxysection{Класс Shutdown\+Command}
+\hypertarget{class_shutdown_command}{}\label{class_shutdown_command}\index{ShutdownCommand@{ShutdownCommand}}
+
+
+Команда выполнения системы  
+
+
+Граф наследования:\+Shutdown\+Command:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shutdown_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_shutdown_command_a7785c34376ca324b4796c8ae7c54f56c}{Shutdown\+Command}} (\doxymbox{\hyperlink{class_computer_system}{Computer\+System}} \texorpdfstring{$\ast$}{*}s)
+\item 
+void \doxymbox{\hyperlink{class_shutdown_command_a9fbcb462c911ed9a45e40d7617846395}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Метод для испольнения команды \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_shutdown_command_a1ab55b9c24bc00698d95e4ff0f695087}{undo}} () override
+\begin{DoxyCompactList}\small\item\em Метод для отмены действия \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_computer_system}{Computer\+System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_shutdown_command_a4e9dbad96f52f5bb2ef356c89ffa1216}{system}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Команда выполнения системы 
+
+\label{doc-constructors}
+\Hypertarget{class_shutdown_command_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_shutdown_command_a7785c34376ca324b4796c8ae7c54f56c}\index{ShutdownCommand@{ShutdownCommand}!ShutdownCommand@{ShutdownCommand}}
+\index{ShutdownCommand@{ShutdownCommand}!ShutdownCommand@{ShutdownCommand}}
+\doxysubsubsection{\texorpdfstring{ShutdownCommand()}{ShutdownCommand()}}
+{\footnotesize\ttfamily \label{class_shutdown_command_a7785c34376ca324b4796c8ae7c54f56c} 
+Shutdown\+Command::\+\+Shutdown\+Command (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_computer_system}{Computer\+System}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_shutdown_command_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_shutdown_command_a9fbcb462c911ed9a45e40d7617846395}\index{ShutdownCommand@{ShutdownCommand}!execute@{execute}}
+\index{execute@{execute}!ShutdownCommand@{ShutdownCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_shutdown_command_a9fbcb462c911ed9a45e40d7617846395} 
+void Shutdown\+Command::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Метод для испольнения команды 
+
+
+
+Замещает \doxymbox{\hyperlink{class_commad_afe90e131863ad7af6b354eedd1b07bdf}{Commad}}.
+
+\Hypertarget{class_shutdown_command_a1ab55b9c24bc00698d95e4ff0f695087}\index{ShutdownCommand@{ShutdownCommand}!undo@{undo}}
+\index{undo@{undo}!ShutdownCommand@{ShutdownCommand}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily \label{class_shutdown_command_a1ab55b9c24bc00698d95e4ff0f695087} 
+void Shutdown\+Command::\+undo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Метод для отмены действия 
+
+\begin{DoxyRemark}{Прим.}
+Просто выводится текст в консоль 
+\end{DoxyRemark}
+
+
+Замещает \doxymbox{\hyperlink{class_commad_a549e7c1618396211571ec6ba8b1b0ea0}{Commad}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_shutdown_command_doc-variable-members}
+\doxysubsection{Данные класса}
+\Hypertarget{class_shutdown_command_a4e9dbad96f52f5bb2ef356c89ffa1216}\index{ShutdownCommand@{ShutdownCommand}!system@{system}}
+\index{system@{system}!ShutdownCommand@{ShutdownCommand}}
+\doxysubsubsection{\texorpdfstring{system}{system}}
+{\footnotesize\ttfamily \label{class_shutdown_command_a4e9dbad96f52f5bb2ef356c89ffa1216} 
+\doxymbox{\hyperlink{class_computer_system}{Computer\+System}}\texorpdfstring{$\ast$}{*} Shutdown\+Command::\+system\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов класса находятся в файле:\+\begin{DoxyCompactItemize}
+\item 
+Behavioral Patterns/\+\+Behavioral Patterns/\+\doxymbox{\hyperlink{_behavioral_01_patterns_8cpp}{Behavioral Patterns.\+cpp}}\end{DoxyCompactItemize}

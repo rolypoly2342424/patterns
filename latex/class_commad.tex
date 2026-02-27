@@ -1,0 +1,64 @@
+\doxysection{Класс Commad}
+\hypertarget{class_commad}{}\label{class_commad}\index{Commad@{Commad}}
+
+
+Интерфейс команд  
+
+
+Граф наследования:\+Commad:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.707317cm]{class_commad}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \doxymbox{\hyperlink{class_commad_afe90e131863ad7af6b354eedd1b07bdf}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Метод для испольнения команды \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_commad_a549e7c1618396211571ec6ba8b1b0ea0}{undo}} ()=0
+\begin{DoxyCompactList}\small\item\em Метод для отмены действия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс команд 
+
+\label{doc-func-members}
+\Hypertarget{class_commad_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_commad_afe90e131863ad7af6b354eedd1b07bdf}\index{Commad@{Commad}!execute@{execute}}
+\index{execute@{execute}!Commad@{Commad}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_commad_afe90e131863ad7af6b354eedd1b07bdf} 
+virtual void Commad::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Метод для испольнения команды 
+
+
+
+Замещается в \doxymbox{\hyperlink{class_launch_browser_command_a7095647975f6e36fa51e8831020e6f60}{Launch\+Browser\+Command}}, \doxymbox{\hyperlink{classopen_file_command_a8d685956c2b5bbfb760918a9bc35f0af}{open\+File\+Command}}, \doxymbox{\hyperlink{class_restard_command_af55b9f9864f8fd77e5a399b94caded5a}{Restard\+Command}} и \doxymbox{\hyperlink{class_shutdown_command_a9fbcb462c911ed9a45e40d7617846395}{Shutdown\+Command}}.
+
+\Hypertarget{class_commad_a549e7c1618396211571ec6ba8b1b0ea0}\index{Commad@{Commad}!undo@{undo}}
+\index{undo@{undo}!Commad@{Commad}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily \label{class_commad_a549e7c1618396211571ec6ba8b1b0ea0} 
+virtual void Commad::\+undo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Метод для отмены действия 
+
+\begin{DoxyRemark}{Прим.}
+Просто выводится текст в консоль 
+\end{DoxyRemark}
+
+
+Замещается в \doxymbox{\hyperlink{class_launch_browser_command_a1f74fc3f40306db43bf9df7289388662}{Launch\+Browser\+Command}}, \doxymbox{\hyperlink{classopen_file_command_a3768f3ad3c1733f3d4bcb3fe6de4c2c4}{open\+File\+Command}}, \doxymbox{\hyperlink{class_restard_command_a72aa90042c7423469944772733ed7d35}{Restard\+Command}} и \doxymbox{\hyperlink{class_shutdown_command_a1ab55b9c24bc00698d95e4ff0f695087}{Shutdown\+Command}}.
+
+
+
+Объявления и описания членов класса находятся в файле:\+\begin{DoxyCompactItemize}
+\item 
+Behavioral Patterns/\+\+Behavioral Patterns/\+\doxymbox{\hyperlink{_behavioral_01_patterns_8cpp}{Behavioral Patterns.\+cpp}}\end{DoxyCompactItemize}

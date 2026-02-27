@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "Archer", "class_archer.html", "class_archer" ],
+    [ "ArcherFactory", "class_archer_factory.html", "class_archer_factory" ],
+    [ "Beverage", "class_beverage.html", "class_beverage" ],
+    [ "Character", "class_character.html", "class_character" ],
+    [ "CharacterFactory", "class_character_factory.html", "class_character_factory" ],
+    [ "Chocolate", "class_chocolate.html", "class_chocolate" ],
+    [ "Commad", "class_commad.html", "class_commad" ],
+    [ "ComputerSystem", "class_computer_system.html", "class_computer_system" ],
+    [ "CondimentDecorator", "class_condiment_decorator.html", "class_condiment_decorator" ],
+    [ "Espresso", "class_espresso.html", "class_espresso" ],
+    [ "Knight", "class_knight.html", "class_knight" ],
+    [ "KnightFactory", "class_knight_factory.html", "class_knight_factory" ],
+    [ "LaunchBrowserCommand", "class_launch_browser_command.html", "class_launch_browser_command" ],
+    [ "Mage", "class_mage.html", "class_mage" ],
+    [ "MageFactory", "class_mage_factory.html", "class_mage_factory" ],
+    [ "Milk", "class_milk.html", "class_milk" ],
+    [ "openFileCommand", "classopen_file_command.html", "classopen_file_command" ],
+    [ "RenoteControl", "class_renote_control.html", "class_renote_control" ],
+    [ "RestardCommand", "class_restard_command.html", "class_restard_command" ],
+    [ "ShutdownCommand", "class_shutdown_command.html", "class_shutdown_command" ],
+    [ "Sugar", "class_sugar.html", "class_sugar" ],
+    [ "Syrup", "class_syrup.html", "class_syrup" ],
+    [ "Tea", "class_tea.html", "class_tea" ],
+    [ "Warrior", "class_warrior.html", "class_warrior" ],
+    [ "WarriorFactory", "class_warrior_factory.html", "class_warrior_factory" ]
+];

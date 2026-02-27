@@ -1,0 +1,95 @@
+\doxysection{Класс Chocolate}
+\hypertarget{class_chocolate}{}\label{class_chocolate}\index{Chocolate@{Chocolate}}
+
+
+Класс для добавка шоколад  
+
+
+Граф наследования:\+Chocolate:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_chocolate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_chocolate_ab02c5ed7adca8b935215e3cec6cc65a4}{Chocolate}} (\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}b)
+\item 
+string \doxymbox{\hyperlink{class_chocolate_a8629c1dc9b7f3b9949f44f74d2ea266e}{get\+Description}} () override
+\begin{DoxyCompactList}\small\item\em Получает описание напитка \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_chocolate_ac638d4dc266558dc56bd06244a61177b}{cost}} () override
+\begin{DoxyCompactList}\small\item\em Расчитывает полную стоимость \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \doxymbox{\hyperlink{class_condiment_decorator}{Condiment\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_condiment_decorator_ae243b2a0f2785a0c1c32340408bebb59}{Condiment\+Decorator}} (\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}b)
+\item 
+string \doxymbox{\hyperlink{class_condiment_decorator_a0f95d1319daadd8ed01b2ffaa3c601d6}{get\+Description}} () override
+\item 
+double \doxymbox{\hyperlink{class_condiment_decorator_aae52dd4645b9c84541728a60295a3882}{cost}} () override
+\begin{DoxyCompactList}\small\item\em Расчитывает полную стоимость \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \doxymbox{\hyperlink{class_condiment_decorator}{Condiment\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_condiment_decorator_ae59398f75aea06c109f4759cd8681b31}{beverge}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для добавка шоколад 
+
+\label{doc-constructors}
+\Hypertarget{class_chocolate_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_chocolate_ab02c5ed7adca8b935215e3cec6cc65a4}\index{Chocolate@{Chocolate}!Chocolate@{Chocolate}}
+\index{Chocolate@{Chocolate}!Chocolate@{Chocolate}}
+\doxysubsubsection{\texorpdfstring{Chocolate()}{Chocolate()}}
+{\footnotesize\ttfamily \label{class_chocolate_ab02c5ed7adca8b935215e3cec6cc65a4} 
+Chocolate::\+\+Chocolate (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_chocolate_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_chocolate_ac638d4dc266558dc56bd06244a61177b}\index{Chocolate@{Chocolate}!cost@{cost}}
+\index{cost@{cost}!Chocolate@{Chocolate}}
+\doxysubsubsection{\texorpdfstring{cost()}{cost()}}
+{\footnotesize\ttfamily \label{class_chocolate_ac638d4dc266558dc56bd06244a61177b} 
+double Chocolate::\+cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Расчитывает полную стоимость 
+
+\begin{DoxyReturn}{Возвращает}
+double цену 
+\end{DoxyReturn}
+
+
+Замещает \doxymbox{\hyperlink{class_beverage_af58f2e85b9dfafc8a32f64e9b5127b1e}{Beverage}}.
+
+\Hypertarget{class_chocolate_a8629c1dc9b7f3b9949f44f74d2ea266e}\index{Chocolate@{Chocolate}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Chocolate@{Chocolate}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_chocolate_a8629c1dc9b7f3b9949f44f74d2ea266e} 
+string Chocolate::\+get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Получает описание напитка 
+
+\begin{DoxyReturn}{Возвращает}
+string название и список добавок 
+\end{DoxyReturn}
+
+
+Замещает \doxymbox{\hyperlink{class_beverage_a23e305526d707afe1a006e441a71a8b8}{Beverage}}.
+
+
+
+Объявления и описания членов класса находятся в файле:\+\begin{DoxyCompactItemize}
+\item 
+Structuryal Patterns/\+\+Structuryal Patterns1/\+\doxymbox{\hyperlink{_structuryal_01_patterns1_8cpp}{Structuryal Patterns1.\+cpp}}\end{DoxyCompactItemize}
