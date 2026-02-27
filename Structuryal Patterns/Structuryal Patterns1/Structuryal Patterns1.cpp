@@ -1,14 +1,24 @@
 ﻿#include <iostream>
 using namespace std;
 
+/// \brief Класс для всех напитков
 class Beverage
 {
 public:
+    /**
+    * \brief Получает описание напитка
+    * \return string название и список добавок 
+    */
     virtual string getDescription() = 0;
+    /**
+    * \brief Расчитывает полную стоимость
+    * \return double цену
+    */
     virtual double cost() = 0;
 
 };
 
+/// \brief Класс Эспрессо
 class Espresso : public Beverage
 {
 public:
@@ -16,6 +26,7 @@ public:
     double cost() override { return 1.99; }
 };
 
+/// \brief Класс Чай
 class Tea : public Beverage
 {
 public:
@@ -23,18 +34,24 @@ public:
     double cost() override { return 1.50; }
 };
 
-
-
+/// \brief Класс для добавок
 class CondimentDecorator : public Beverage
 {
 protected:
     Beverage* beverge;
 public:
+    /**
+    * \note Принимает любой объект
+    */
     CondimentDecorator(Beverage* b) : beverge(b) {}
+    /**
+    * \remark Деструктор который удаляет вложенный объект
+    */
     string getDescription() override { return beverge->getDescription(); }
     double cost() override { return beverge->cost(); }
 };
 
+/// \brief Класс добавка молоко
 class Milk : public CondimentDecorator
 {
 public:
@@ -43,6 +60,7 @@ public:
     double cost() override { return beverge->cost() + 0.10; }
 };
 
+/// \brief Класс для добавка сахар
 class Sugar : public CondimentDecorator
 {
 public:
@@ -51,6 +69,7 @@ public:
     double cost() override { return beverge->cost() + 0.05; }
 };
 
+/// \brief Класс для добавка Сироп
 class Syrup : public CondimentDecorator
 {
 public:
@@ -59,6 +78,7 @@ public:
     double cost() override { return beverge->cost() + 0.15; }
 };
 
+/// \brief Класс для добавка шоколад
 class Chocolate : public CondimentDecorator
 {
 public:
@@ -68,7 +88,9 @@ public:
 };
 
 
-
+/// \brief Создаем напиток
+/// \note Удаляем шоколад
+/// СОздаем чай с добавками 
 int main()
 {
     setlocale(LC_ALL, "ru");
